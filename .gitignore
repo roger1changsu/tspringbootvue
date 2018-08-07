@@ -1,0 +1,19 @@
+.DS_Store
+
+/target/
+/src/main/web/target/node_modules/
+/src/main/web/target/dist/
+/src/main/web/target/npm-debug.log*
+/src/main/web/target/yarn-debug.log*
+/src/main/web/target/yarn-error.log*
+/src/main/web/target/test/unit/coverage/
+/src/main/web/target/test/e2e/reports/
+/src/main/web/target/selenium-debug.log
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
