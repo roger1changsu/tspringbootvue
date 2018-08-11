@@ -15,7 +15,7 @@ public class AuthenticationController {
     @Resource(name = "authenticationService")
     private IAuthenticationService authenticationService;
 
-    @RequestMapping("/api/login")
+    @RequestMapping("/api/authentication/login")
     public RespEntity loginCheck(LoginRequestVO loginReq) {
         if (authenticationService.loginChk(loginReq.getUsername(), loginReq.getPassword())) {
             return new RespEntity(RespCode.SUCCESS);

@@ -28,3 +28,20 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
+## Unit Test
+
+### Test HTTP Request to backend
+
+axios mock: https://github.com/ctimmerm/axios-mock-adapter
+
+
+## Request Signature
+
+  let base64Body = Buffer.from(JSON.stringify(config.data)).toString('base64')
+  let signStr = config.method.toUpperCase() + base64Body + timestamp + nonce
+  let hmac = crypto.createHmac('sha1', nonce)
+  hmac.update(signStr)
+  let sign = hmac.digest('base64')
